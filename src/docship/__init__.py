@@ -9,4 +9,4 @@
 # - MINOR = 0: No significant new features have been added yet.
 # - PATCH = 1: This is the first patch release, addressing minor fixes or updates.
 
-__version__ = "0.0.1"
+__version__ = "0.0.1a"
