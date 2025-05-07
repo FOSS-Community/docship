@@ -6,7 +6,7 @@ from .exceptions import DockshipException, NginxConfigError, NginxNotInstalled
 def is_nginx_install() -> None:  # pylint: disable=C0116
     try:
         subprocess.run(
-            ["nginx", "-version"],
+            ["nginx", "-v"],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
             check=True,
