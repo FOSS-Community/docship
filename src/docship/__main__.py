@@ -23,7 +23,7 @@ def main():
     parser.add_argument(
         "--version",
         "-v",
-        help="to get the current version of dockship",
+        help="to get the current version of docship",
         action="store_true",
     )
 
@@ -55,7 +55,7 @@ def main():
     args = parser.parse_args()
 
     if args.version:
-        print(f"dockship: {__version__}")
+        print(f"docship: {__version__}")
         return
 
     if args.command == "deploy":

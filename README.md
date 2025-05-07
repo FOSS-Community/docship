@@ -1,42 +1,42 @@
 <p align="center">
     <img src="./artwork/dockership-logo.png" width="10%" />
-    <h1 align="center">Dockship ⛴️</h1>
+    <h1 align="center">docship ⛴️</h1>
     <h3 align="center">A tool to deploy stuff running on docker</h3>
 </p>
 
 ## Installation
 
-Install dockship with pip
+Install docship with pip
 
 ```bash
-  pip3 install dockship
+  pip3 install docship
 
-  dockship --version
+  docship --version
 ```
 
 Install from source
 
 ```bash
-  git clone https://github.com/Mr-Sunglasses/dockship
+  git clone https://github.com/foSS-Community/docship
 
-  cd dockship
+  cd docship
 
   python3 -m pip3 install .
 
-  dockship --version
+  docship --version
 ```
 
 ## Usage
 
 ```
-dockship --help
-usage: dockship [-h] [--version] {deploy} ...
+docship --help
+usage: docship [-h] [--version] {deploy} ...
 
 Dockership CLI for managing deployments.
 
 options:
   -h, --help     show this help message and exit
-  --version, -v  to get the current version of dockship
+  --version, -v  to get the current version of docship
 
 Commands:
   {deploy}       Available commands
@@ -45,7 +45,7 @@ Commands:
 
 ### To deploy a site running in docker or any port
 ```
-usage: dockship deploy [-h] --name NAME --address ADDRESS
+usage: docship deploy [-h] --name NAME --address ADDRESS
 
 options:
   -h, --help            show this help message and exit
@@ -56,7 +56,7 @@ options:
 ```
 
 ```
-dockship deploy -n xyz.fosscu.org -a http://localhost:8082
+docship deploy -n xyz.fosscu.org -a http://localhost:8082
 ```
 
 ## Contributing
