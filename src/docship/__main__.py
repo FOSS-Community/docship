@@ -67,11 +67,11 @@ def main():
         print("Checking Nginx configuration...")
         check_nginx_configuration()
         print("Creating symlink...")
-        create_symlink(args.server_name)
+        create_symlink(args.name)
         print("Restarting Nginx...")
         restart_nginx_using_systemctl()
         print("Generating SSL certificate using Certbot...")
-        ssl_using_certbot(args.server_name)
+        ssl_using_certbot(args.name)
         print("SSL certificate generated successfully!")
         print("Deployment successful!")
         return
