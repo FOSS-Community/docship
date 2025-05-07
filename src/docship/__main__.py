@@ -63,7 +63,7 @@ def main():
         print("Checking if Nginx is installed...")
         is_nginx_install()
         print("Writing to Nginx configuration...")
-        write_to_nginx_config(args.server_name, args.app_server_address)
+        write_to_nginx_config(args.name, args.address)
         print("Checking Nginx configuration...")
         check_nginx_configuration()
         print("Creating symlink...")
