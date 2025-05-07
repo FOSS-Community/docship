@@ -1,9 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "dockship"
 version = "0.1.0"
-description = "Add your description here"
+description = "A tool to deploy fosscu services"
 readme = "README.md"
-requires-python = ">=3.13"
+authors = [
+    { name = "Kanishk Pachauri", email = "itskanishkp.py@gmail.com" },
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+keywords = ["dockship", "fosscu", "commandline"]
+requires-python = ">=3.9"
 dependencies = []
 
 [dependency-groups]
@@ -14,3 +34,9 @@ formatter = [
     "black>=24.10.0",
     "isort>=5.13.2",
 ]
+
+[project.urls]
+Homepage = "https://github.com/foSS-Community/dockship"
+
+[project.scripts]
+dockship = "dockship.__main__:main"
