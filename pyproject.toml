@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docship"
+version = "0.0.1a"
+description = "A tool to deploy fosscu services"
+readme = "README.md"
+authors = [
+    { name = "Kanishk Pachauri", email = "itskanishkp.py@gmail.com" },
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+keywords = ["docship", "fosscu", "commandline"]
+requires-python = ">=3.9"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
+formatter = [
+    "black>=24.10.0",
+    "isort>=5.13.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/foSS-Community/docship"
+
+[project.scripts]
+docship = "docship.__main__:main"
